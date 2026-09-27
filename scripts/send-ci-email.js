@@ -5,10 +5,10 @@ function required(name, value) {
     throw new Error(`Required environment variable is missing: ${name}`);
   }
 
-  return value; 
+  return value;
 }
 
-async function main() {  
+async function main() {
   const smtpServer = required("SMTP_SERVER", process.env.SMTP_SERVER);
   const smtpPort = Number(required("SMTP_PORT", process.env.SMTP_PORT));
   const smtpUsername = required("SMTP_USERNAME", process.env.SMTP_USERNAME);
