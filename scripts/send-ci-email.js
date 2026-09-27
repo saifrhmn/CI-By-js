@@ -5,7 +5,7 @@ function required(name, value) {
     throw new Error(`Required environment variable is missing: ${name}`);
   }
 
-  return value;
+  return value; 
 }
 
 async function main() {
