@@ -9,11 +9,11 @@ function required(name, value) {
 }
 
 async function main() {
-  const smtpServer = required("SMTP_SERVER", process.env.SMTP_SERVER); 
+  const smtpServer = required("SMTP_SERVER", process.env.SMTP_SERVER);
   const smtpPort = Number(required("SMTP_PORT", process.env.SMTP_PORT));
   const smtpUsername = required("SMTP_USERNAME", process.env.SMTP_USERNAME);
-  const smtpPassword = required("SMTP_PASSWORD", process.env.SMTP_PASSWORD);
-  const recipient = required("CI_EMAIL_RECIPIENT", process.env.CI_EMAIL_RECIPIENT); 
+  const smtpPassword = required("SMTP_PASSWORD", process.env.SMTP_PASSWORD); 
+  const recipient = required("CI_EMAIL_RECIPIENT", process.env.CI_EMAIL_RECIPIENT);
 
   const status = process.env.CI_STATUS || "unknown";
   const repository = process.env.GITHUB_REPOSITORY || "unknown repository";
