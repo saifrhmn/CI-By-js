@@ -17,7 +17,7 @@ async function main() {
 
   const status = process.env.CI_STATUS || "unknown";
   const repository = process.env.GITHUB_REPOSITORY || "unknown repository";
-  const workflow = process.env.GITHUB_WORKFLOW || "JavaScript CI";
+  const workflow = process.env.GITHUB_WORKFLOW || "JavaScript CI"; 
   const branch = process.env.GITHUB_REF_NAME || "unknown";
   const commitSha = process.env.GITHUB_SHA || "unknown";
   const actor = process.env.GITHUB_ACTOR || "unknown";
